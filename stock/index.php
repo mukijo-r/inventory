@@ -1,10 +1,9 @@
+<?php include 'cek.php';
+    include '../dbconnect.php';
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
-
-<?php 
-    include '../dbconnect.php';
-    include 'cek.php';
-	?>
 
 <head>
     <meta charset="utf-8">

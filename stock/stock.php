@@ -1,10 +1,7 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
 <?php 
+include 'cek.php';
     include '../dbconnect.php';
-    include 'cek.php';
-
+    
     if(isset($_POST['update'])){
         $idx = $_POST['idbrg'];
         $nama = $_POST['nama'];
@@ -51,6 +48,9 @@
             }
     };
 	?>
+	
+<!doctype html>
+<html class="no-js" lang="en">	
 
 <head>
     <meta charset="utf-8">
@@ -376,15 +376,15 @@
 							<form action="tmb_brg_act.php" method="post">
 								<div class="form-group">
 									<label>Product's Name</label>
-									<input name="nama" type="text" class="form-control" placeholder="Nama Barang" required>
+									<input name="nama" type="text" class="form-control" placeholder="Product's Name" required>
 								</div>
 								<div class="form-group">
 									<label>Type</label>
-									<input name="jenis" type="text" class="form-control" placeholder="Jenis / Kategori Barang">
+									<input name="jenis" type="text" class="form-control" placeholder="Type/Category">
 								</div>
 								<div class="form-group">
 									<label>Brand</label>
-									<input name="merk" type="text" class="form-control" placeholder="Merk Barang">
+									<input name="merk" type="text" class="form-control" placeholder="Brand">
 								</div>
 								<div class="form-group">
 									<label>Stock</label>
@@ -404,13 +404,13 @@
 								</div>
 								<div class="form-group">
 									<label>Location</label>
-									<input name="lokasi" type="text" class="form-control" placeholder="Lokasi barang">
+									<input name="lokasi" type="text" class="form-control" placeholder="Location">
 								</div>
 
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-								<input type="submit" class="btn btn-primary" value="Simpan">
+								<input type="submit" class="btn btn-primary" value="Save">
 							</div>
 						</form>
 					</div>

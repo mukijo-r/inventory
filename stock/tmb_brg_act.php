@@ -7,7 +7,7 @@ $satuan=$_POST['satuan'];
 $stock=$_POST['stock'];
 $lokasi=$_POST['lokasi'];
 	  
-$query = mysqli_query($conn,"insert into sstock_brg values('','$nama','$jenis','$merk','$stock','$satuan','$lokasi')");
+$query = mysqli_query($conn,"insert into sstock_brg (nama, jenis, merk, stock, satuan, lokasi) values('$nama','$jenis','$merk','$stock','$satuan','$lokasi')");
 if ($query){
 
 echo " <div class='alert alert-success'>

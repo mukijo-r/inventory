@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +42,7 @@ echo " <div class='alert alert-success'>
  <meta http-equiv='refresh' content='1; url= index.php'/> ";
 }
 ?>
+
 
 </body>
 </html>

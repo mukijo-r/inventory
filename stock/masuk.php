@@ -1,9 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
 <?php 
-    include '../dbconnect.php';
     include 'cek.php';
+    include '../dbconnect.php';
 
     if(isset($_POST['update'])){
         $id = $_POST['id']; //iddata
@@ -101,6 +98,9 @@
             }
     };
 	?>
+	
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -414,7 +414,7 @@
 								<div class="form-group">
 									<label>Product's Name</label>
 									<select name="barang" class="custom-select form-control">
-									<option selected>choose Product</option>
+									<option selected>Choose Product</option>
 									<?php
 									$det=mysqli_query($conn,"select * from sstock_brg order by nama ASC");
 									while($d=mysqli_fetch_array($det)){
@@ -431,13 +431,13 @@
 								</div>
 								<div class="form-group">
 									<label>Remarks</label>
-									<input name="ket" type="text" class="form-control" placeholder="Keterangan">
+									<input name="ket" type="text" class="form-control" placeholder="Remarks">
 								</div>
 								
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-								<input type="submit" class="btn btn-primary" value="Simpan">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+								<input type="submit" class="btn btn-primary" value="Save">
 							</div>
 						</form>
 					</div>
